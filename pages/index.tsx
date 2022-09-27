@@ -2,35 +2,37 @@ import type { NextPage } from 'next'
 import { BsArrowLeft } from 'react-icons/bs'
 import { BsArrowRight } from 'react-icons/bs'
 import { AiOutlineMinus } from 'react-icons/ai'
-import Image from 'next/image'
+import Footer from '../components/Footer'
 import Layout from '../components/Layout'
 import Link from 'next/link'
 import styles from '../styles/Home.module.css'
 
+/**
+ * ! Define the Home page
+ */
+
 const Home: NextPage = () => {
+
+  //* View builder
   return (
     <div className={styles.container}>
       <Layout title='Home | Technical chellenge Kommon' description='description' />
-
       <main className={styles.main}>
         <h1 className={styles.title}>
           Frontend <span>Technical Challenge</span>
         </h1>
-
         <p className={styles.description}>
           Created by Yevhen Balahutrak © 2022
         </p>
-
         <div className={styles.grid}>
           <Link href="/calculator">
             <div className={styles.card}>
               <div className={styles.right}>
                 <h2><BsArrowLeft className={styles.icon} /> Calculator</h2>
-                <p>A calculator that allows the user to add, substract, multiply and divide</p>
+                <p>A calculator that allows user to perform certain actions</p>
               </div>
             </div>
           </Link>
-
           <Link href="/quotes">
             <div className={styles.card}>
               <div className={styles.center}>
@@ -39,33 +41,20 @@ const Home: NextPage = () => {
               </div>
             </div>
           </Link>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/canary/examples"
-            className={styles.card}
-          >
+          <Link href="/metaconnect">
+          <div className={styles.card}>
             <div className={styles.left}>
-              <div className={styles.space}><h2>Metamask <BsArrowRight className={styles.icon} /></h2></div>
-              <p>Discover and deploy boilerplate example Next.js projects.</p>
+              <h2>Metamask <BsArrowRight className={styles.icon} /></h2>
+              <p>Perform a connection to your Metamask wallet and see some data</p>
             </div>
-          </a>
+          </div>
+          </Link>
         </div>
       </main>
-
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <span className={styles.logo}>
-            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-          </span>
-        </a>
-      </footer>
+      <Footer />
     </div>
   )
 }
 
+//* Export component
 export default Home
