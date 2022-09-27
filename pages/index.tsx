@@ -4,6 +4,7 @@ import { BsArrowRight } from 'react-icons/bs'
 import { AiOutlineMinus } from 'react-icons/ai'
 import Footer from '../components/Footer'
 import Layout from '../components/Layout'
+import Header from '../components/Header/Header'
 import Link from 'next/link'
 import styles from '../styles/Home.module.css'
 
@@ -18,12 +19,7 @@ const Home: NextPage = () => {
     <div className={styles.container}>
       <Layout title='Home | Technical chellenge Kommon' description='description' />
       <main className={styles.main}>
-        <h1 className={styles.title}>
-          Frontend <span>Technical Challenge</span>
-        </h1>
-        <p className={styles.description}>
-          Created by Yevhen Balahutrak © 2022
-        </p>
+        <Header title='Frontend ' span='Technical Challenge' description='Created by Yevhen Balahutrak © 2022' />
         <div className={styles.grid}>
           <Link href="/calculator">
             <div className={styles.card}>
