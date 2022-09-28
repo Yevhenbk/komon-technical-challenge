@@ -1,9 +1,10 @@
 import * as React from 'react'
-import { InferGetServerSidePropsType, NextPage } from "next"
+import { InferGetStaticPropsType, NextPage } from "next"
 import { AiOutlineMinus } from 'react-icons/ai'
+import Layout from '../components/Layout/Layout'
 import Header from "../components/Header/Header"
 import Footer from "../components/Footer/Footer"
-import styles from "../styles/Quotes.module.css"
+import styles from "../styles/Quotes.module.scss"
 
 /**
  * ! Define the Quotes page
@@ -21,22 +22,23 @@ type Props = {
 }
 
 //* Fetch data
-export const getServerSideProps = async () => {
+export const getStaticProps = async () => {
 
     const res = await fetch(`https://zenquotes.io/api/quotes`)
     const quotes = await res.json()
-    console.log(quotes)
+    // console.log(quotes)
 
     return {
       props: { data: quotes }
     }
 }
 
-const Quotes: NextPage<Props> = ({data}: InferGetServerSidePropsType<typeof getServerSideProps>) => {
+const Quotes: NextPage<Props> = ({data}: InferGetStaticPropsType<typeof getStaticProps>) => {
   
   //* View builder  
   return (
     <div>
+      <Layout title='Quotes | Technical chellenge Kommon' description='description' />
         <main className={styles.main}>
            <Header span="ZenQuotes" description="Generating an array of 50 random quotes on each request" /> 
            <div className={styles.wrapper}>

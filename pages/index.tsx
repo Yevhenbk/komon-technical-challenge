@@ -6,7 +6,7 @@ import Footer from '../components/Footer/Footer'
 import Layout from '../components/Layout/Layout'
 import Header from '../components/Header/Header'
 import Link from 'next/link'
-import styles from '../styles/Home.module.css'
+import styles from '../styles/Home.module.scss'
 
 /**
  * ! Define the Home page
@@ -24,7 +24,7 @@ const Home: NextPage = () => {
           <Link href="/calculator">
             <div className={styles.card}>
               <div className={styles.right}>
-                <h2><BsArrowLeft className={styles.icon} /> Calculator</h2>
+              <div className={styles.align} style={{justifyContent: 'right'}}><BsArrowLeft className={styles.icon} /><h2> Calculator</h2></div>
                 <p>A calculator that allows user to perform certain actions</p>
               </div>
             </div>
@@ -32,7 +32,7 @@ const Home: NextPage = () => {
           <Link href="/quotes">
             <div className={styles.card}>
               <div className={styles.center}>
-                <h2><AiOutlineMinus className={styles.icon} /> ZenQuotes <AiOutlineMinus className={styles.icon} /></h2>
+              <div className={styles.align} style={{justifyContent: 'center'}}><AiOutlineMinus className={styles.icon} /><h2> ZenQuotes </h2><AiOutlineMinus className={styles.icon} /></div>
                 <p>Retreived ZenQuotes API displaying the quotes on screen</p>
               </div>
             </div>
@@ -40,7 +40,7 @@ const Home: NextPage = () => {
           <Link href="/metaconnect">
           <div className={styles.card}>
             <div className={styles.left}>
-              <h2>Metamask <BsArrowRight className={styles.icon} /></h2>
+              <div className={styles.align} style={{justifyContent: 'left'}}><h2>Metamask </h2><BsArrowRight className={styles.icon} /></div>
               <p>Perform a connection to your Metamask wallet and see some data</p>
             </div>
           </div>

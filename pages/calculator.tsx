@@ -1,8 +1,9 @@
 import * as React from "react"
 import { NextPage } from "next"
+import Layout from "../components/Layout/Layout"
 import Footer from "../components/Footer/Footer"
 import Header from "../components/Header/Header"
-import styles from "../styles/Calculator.module.css"
+import styles from "../styles/Calculator.module.scss"
 
 /**
  * ! Define the Calculator page
@@ -22,13 +23,13 @@ const Calculator: NextPage = () => {
     let valueTwo = parseInt(inputTwo)
     let answer
 
-    if (operation == '+') {
+    if (operation === '+') {
         answer = valueOne + valueTwo
     } else if (operation === '-') {
         answer = valueOne - valueTwo
-    } else if (operation == '/') {
+    } else if (operation === '/') {
         answer = valueOne / valueTwo
-    } else if (operation == '*') {
+    } else if (operation === '*') {
         answer = valueOne * valueTwo
     }
     
@@ -39,8 +40,9 @@ const Calculator: NextPage = () => {
   //* View Builder
   return (
     <div>
+        <Layout title='Calculator | Technical chellenge Kommon' description='description' />
         <main className={styles.main}>
-            <Header span="Calculator" description="Provide the values and choose operation in order to generate the output" />
+            <Header span="Calculator" description="Submit the values with chosen operation in order to generate the output" />
             <div className={styles.row}>
                 <form className={styles.form}>
                     <input
@@ -65,7 +67,7 @@ const Calculator: NextPage = () => {
                         className={styles.input}
                     />
                 </form>
-                <input type="button" value='Generate' className={styles.button} onClick={() => setValues(inputOne, inputTwo, operation) }/>
+                <input type="button" value='Submit' className={styles.button} onClick={() => setValues(inputOne, inputTwo, operation) }/>
                 <div className={styles.output}>
                     <p>Output:</p>
                     <p>{answer}</p>

@@ -1,0 +1,82 @@
+.main {
+    padding: 4rem 0;
+    flex: 1;
+    height: 92vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper {
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    transition: color 0.15s ease, border-color 0.15s ease;
+    overflow: hidden;
+    padding: .75rem 0;
+    min-width: 20rem;
+}
+
+.section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 1rem .75rem;
+}
+
+.sectionTwo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: .75rem 1rem 0;
+    border-top: 1px solid var(--border);
+}
+
+.sectionTwo h2 {
+    margin: 0;
+    font-size: 1.25rem;
+}
+
+.sectionTwo p {
+    margin: 0 0 0 .5rem;
+    font-size: 1.25rem;
+}
+
+.section h2 {
+    margin: 0;
+    font-size: 1.25rem;
+}
+
+.section p {
+    margin: 0 0 0 .5rem;
+    font-size: 1.25rem;
+}
+
+.button {
+    font-size: 1rem;
+    margin-top: 1rem;
+    width: 100%;
+    padding: .75rem 1rem;
+    font-family: "Space Mono", sans-serif;
+    color: var(--white);
+    background: var(--secondary);
+    border: none;
+    border-radius: 10px;
+}
+
+.button:hover {
+    cursor: pointer;
+    background-color: #bd4a70;
+}
+
+.placeholder {
+    color: #757575;
+}
+
+@media (max-width: 690px) {
+    .wrapper {
+        max-width: 20rem;
+        overflow: hidden;
+        overflow-x: scroll;
+    }
+}

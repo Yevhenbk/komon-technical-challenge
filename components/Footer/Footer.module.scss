@@ -1,0 +1,39 @@
+.logo {
+    height: 1em;
+    margin-left: 0.5rem;
+}
+
+.logo:hover {
+    color: var(--secondary);
+}
+
+.footer {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 96vw;
+    display: flex;
+    flex: 1;
+    height: 8vh;
+    border-top: 1px solid var(--border);
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .footer a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  } 
+  
+@media (prefers-color-scheme: dark) {
+    .footer {
+      border-color: #222;
+    }
+    .code {
+      background: #111;
+    }
+    .logo img {
+      filter: invert(1);
+    }
+  }
