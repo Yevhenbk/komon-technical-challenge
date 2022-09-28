@@ -1,34 +1,25 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Kommon Technical Challenge
 
-## Getting Started
+This web app is an assessment for Kommon, represented in three pages:
+  - Home, the first that appears on the screen; used for navigation throughout the pages;
+  - Calculator, the page that takes two inputs from the user and performs selected operation onClick;
+  - ZenQuotes, fetching over 50 random quotes every time the page loads from external API;
+  - Metaconnect, it allows you to connect to MetaMask wallet and displays your address and balance on the screen;
+ 
+ This project is made with React.js using TypeScript applying Next.js framework.
 
-First, run the development server:
+Open [https://63347316ca969e094b51dbed--peppy-beijinho-1dd33a.netlify.app/](https://63347316ca969e094b51dbed--peppy-beijinho-1dd33a.netlify.app/) to view it in your browser.
+
+> To start the app run this command inside the project
 
 ```bash
-npm run dev
-# or
-yarn dev
+npm run dev #runs the app in the development mode
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+## Page preview
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+![Preview image 1](https://github.com/Yevhenbk/kommon-technical-challenge/blob/main/public/img/tech_challenge.png)
+![Preview image 2](https://github.com/Yevhenbk/kommon-technical-challenge/blob/main/public/img/calc.png)
+![Preview image 3](https://github.com/Yevhenbk/kommon-technical-challenge/blob/main/public/img/zenq.png)
+![Preview image 4](https://github.com/Yevhenbk/kommon-technical-challenge/blob/main/public/img/metac.png)
