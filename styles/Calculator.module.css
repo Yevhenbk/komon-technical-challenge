@@ -13,6 +13,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 0 1rem;
 }
 
 .output {
@@ -24,14 +25,10 @@
 
 .output p {
     margin: 0;
-}
-
-.output p:nth-child(1) {
     font-size: 1.5rem;
 }
 
 .output p:nth-child(2) {
-    font-size: 1.25rem;
     margin-left: 1rem;
 }
 

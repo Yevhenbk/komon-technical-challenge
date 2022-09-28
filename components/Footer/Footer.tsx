@@ -1,4 +1,4 @@
-import styles from '../styles/Home.module.css'
+import styles from '../../styles/Home.module.css'
 import { AiFillGithub } from 'react-icons/ai'
 import { AiFillLinkedin } from 'react-icons/ai'
 

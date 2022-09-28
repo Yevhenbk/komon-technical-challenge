@@ -1,6 +1,6 @@
 import * as React from "react"
 import { NextPage } from "next"
-import Footer from "../components/Footer"
+import Footer from "../components/Footer/Footer"
 import Header from "../components/Header/Header"
 import styles from "../styles/Calculator.module.css"
 
@@ -8,14 +8,12 @@ import styles from "../styles/Calculator.module.css"
  * ! Define the Calculator page
  */
 
-
-
 const Calculator: NextPage = () => {
 
   //* Define states  
-  const [ inputOne, setInputOne ] = React.useState('')  
-  const [ inputTwo, setInputTwo ] = React.useState('')
-  const [ operation, setOperation] = React.useState('+')
+  const [ inputOne, setInputOne ] = React.useState<string>('')  
+  const [ inputTwo, setInputTwo ] = React.useState<string>('')
+  const [ operation, setOperation] = React.useState<string>('+')
   const [ answer, setAnswer ] = React.useState<number | undefined>(0)
 
   //* Methods
@@ -42,7 +40,7 @@ const Calculator: NextPage = () => {
   return (
     <div>
         <main className={styles.main}>
-            <Header span="Calculator" description="Provide the values and choose operation in order to generate the value" />
+            <Header span="Calculator" description="Provide the values and choose operation in order to generate the output" />
             <div className={styles.row}>
                 <form className={styles.form}>
                     <input
@@ -66,9 +64,8 @@ const Calculator: NextPage = () => {
                         placeholder="Number2 &crarr;"
                         className={styles.input}
                     />
-                    {/* <div>{answer}</div> */}
                 </form>
-                <input type="button" value='Submit' className={styles.button} onClick={() => setValues(inputOne, inputTwo, operation) }/>
+                <input type="button" value='Generate' className={styles.button} onClick={() => setValues(inputOne, inputTwo, operation) }/>
                 <div className={styles.output}>
                     <p>Output:</p>
                     <p>{answer}</p>
