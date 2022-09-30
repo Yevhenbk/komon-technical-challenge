@@ -1,6 +1,6 @@
 # Komon Technical Challenge
 
-This web app is an assessment for Komon, represented in three pages:
+This web app is an assessment for Komon, represented in four pages:
   - Home, the first that appears on the screen; used for navigation throughout the pages;
   - Calculator, the page that takes two inputs from the user and performs selected operation onClick;
   - ZenQuotes, fetching over 50 random quotes every time the page loads from external API;
