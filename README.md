@@ -1,4 +1,4 @@
-# Kommon Technical Challenge
+# Komon Technical Challenge
 
 This web app is an assessment for Komon, represented in three pages:
   - Home, the first that appears on the screen; used for navigation throughout the pages;
