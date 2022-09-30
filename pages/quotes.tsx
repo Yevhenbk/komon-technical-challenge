@@ -37,8 +37,8 @@ const Quotes: NextPage<Props> = ({data}: InferGetStaticPropsType<typeof getStati
   
   //* View builder  
   return (
-    <div>
-      <Layout title='Quotes | Technical chellenge Kommon' description='description' />
+    <div className={styles.container}>
+      <Layout title='Quotes | Technical chellenge Komon' description='description' />
         <main className={styles.main}>
            <Header span="ZenQuotes" description="Generating an array of 50 random quotes on each request" /> 
            <div className={styles.wrapper}>

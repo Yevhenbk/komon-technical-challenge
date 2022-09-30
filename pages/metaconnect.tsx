@@ -22,11 +22,12 @@ const Metaconnect: NextPage = () => {
   
   //* Define states 
   const [ balance, setBalance ] = React.useState<string>("");
-  const [ address, setAddress ] = React.useState<string>("")
+  const [ address, setAddress ] = React.useState<string>("");
+  const [ disable, setDisble ] = React.useState<boolean>(false)
   
   //* Methods
   const buttonHandler = () => {
-  
+    setDisble(true)
     // Asking if metamask is already present or not
     if (window.ethereum) {
   
@@ -60,9 +61,9 @@ const Metaconnect: NextPage = () => {
   //* View builder
   return (
     <div>
-      <Layout title='Metaconnect | Technical chellenge Kommon' description='description' />
+      <Layout title='Metaconnect | Technical chellenge Komon' description='description' />
       <main className={styles.main}>
-        <Header title="Meta" span="Connect" description="Press the button to connect your account to Metamask" />
+        <Header title="Meta" span="Connect" description="Press the button to connect to your Metamask account" />
         <div className={styles.column}>
           <div className={styles.wrapper}>
             <div className={styles.section}>
@@ -74,8 +75,8 @@ const Metaconnect: NextPage = () => {
               {balance === "" ? <p className={styles.placeholder}>0.0</p> : <p>{balance}</p>}
             </div>     
           </div>   
-          <button onClick={buttonHandler} className={styles.button}>
-            Connect to wallet
+          <button onClick={buttonHandler} className={styles.button} disabled={disable}>
+            {!disable ? 'Connect to wallet' : 'Connected'}
           </button>
         </div>
       </main>

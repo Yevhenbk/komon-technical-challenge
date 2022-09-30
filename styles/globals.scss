@@ -30,11 +30,12 @@ a {
 
 ::-webkit-scrollbar {
   height: 8px;
-  background: var(--black);
+  background: var(--white);
 }
 ::-webkit-scrollbar-thumb {
   background: var(--border);
 }
+
 
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
@@ -56,4 +57,11 @@ input[type=number] {
     color: white;
     background: black;
   }
+  ::-webkit-scrollbar {
+    height: 8px;
+    background: var(--black);
+  }
+  ::-webkit-scrollbar-thumb {
+    background: var(--border);
+  }  
 }

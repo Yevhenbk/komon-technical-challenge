@@ -17,7 +17,7 @@ const Home: NextPage = () => {
   //* View builder
   return (
     <div className={styles.container}>
-      <Layout title='Home | Technical chellenge Kommon' description='description' />
+      <Layout title='Home | Technical chellenge Komon' description='description' />
       <main className={styles.main}>
         <Header title='Frontend ' span='Technical Challenge' description='Created by Yevhen Balahutrak © 2022' />
         <div className={styles.grid}>

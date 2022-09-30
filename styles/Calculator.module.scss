@@ -1,3 +1,8 @@
+.container {
+    padding: 0 2rem;
+    min-height: 100vh;
+}
+
 .main {
     padding: 4rem 0;
     flex: 1;
@@ -57,14 +62,6 @@
     border: none;
     outline: none;
     max-width: 16rem;
-}
-
-.input:focus {
-    background-color: var(--black);
-}
-
-.input:active {
-    background-color: var(--black);
 }
 
 .select {

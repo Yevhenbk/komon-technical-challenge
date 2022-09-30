@@ -39,8 +39,8 @@ const Calculator: NextPage = () => {
 
   //* View Builder
   return (
-    <div>
-        <Layout title='Calculator | Technical chellenge Kommon' description='description' />
+    <div className={styles.container}>
+        <Layout title='Calculator | Technical chellenge Komon' description='description' />
         <main className={styles.main}>
             <Header span="Calculator" description="Submit the values with chosen operation in order to generate the output" />
             <div className={styles.row}>
@@ -67,7 +67,7 @@ const Calculator: NextPage = () => {
                         className={styles.input}
                     />
                 </form>
-                <input type="button" value='Submit' className={styles.button} onClick={() => setValues(inputOne, inputTwo, operation) }/>
+                <button className={styles.button} onClick={() => setValues(inputOne, inputTwo, operation) }>Submit</button>
                 <div className={styles.output}>
                     <p>Output:</p>
                     <p>{answer}</p>
