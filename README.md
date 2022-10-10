@@ -6,7 +6,7 @@ This web app is an assessment for Komon, represented in four pages:
   - ZenQuotes, fetching over 50 random quotes every time the page loads from external API;
   - Metaconnect, it allows you to connect to MetaMask wallet and displays your address and balance on the screen;
  
- This project is made with React.js using TypeScript applying Next.js framework.
+ The project is made with React.js using TypeScript and applying Next.js framework.
 
 Open [https://63347316ca969e094b51dbed--peppy-beijinho-1dd33a.netlify.app/](https://63347316ca969e094b51dbed--peppy-beijinho-1dd33a.netlify.app/) to view it in your browser.
 
